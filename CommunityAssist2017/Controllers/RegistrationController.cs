@@ -47,14 +47,14 @@ namespace CommunityAssist2017.Controllers
         public ActionResult Success()
         {
             Message successMsg =  new Message();
-            successMsg.MessageText = "Registration Successful";
+            successMsg.MessageText = "Thanks for registering.";
             return View("Result", successMsg);
         }
 
         public ActionResult Failure()
         {
             Message failureMsg = new Message();
-            failureMsg.MessageText = "Registration Failed";
+            failureMsg.MessageText = "Sorry, but something seems to have gone wrong with the registration.";
             return View("Result", failureMsg);
         }
     }
