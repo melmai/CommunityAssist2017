@@ -14,7 +14,8 @@ namespace CommunityAssist2017.Models
     using System.Data.Entity.Infrastructure;
     using System.Data.Entity.Core.Objects;
     using System.Linq;
-    
+    using System.Collections.Generic;
+
     public partial class CommunityAssist2017Entities : DbContext
     {
         public CommunityAssist2017Entities()
@@ -28,6 +29,12 @@ namespace CommunityAssist2017.Models
         }
     
         public virtual DbSet<BusinessRule> BusinessRules { get; set; }
+
+        internal int usp_Register(string personFirstName, string personLastName, string personEmail, byte[] personPassword, ICollection<PersonAddress> personAddresses)
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual DbSet<Donation> Donations { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<EmployeePosition> EmployeePositions { get; set; }
