@@ -10,7 +10,6 @@ namespace CommunityAssist2017.Controllers
     public class RegistrationController : Controller
     {
         CommunityAssist2017Entities db = new CommunityAssist2017Entities();
-        //NewPerson newPerson = new NewPerson();
 
         // GET: Registration
         public ActionResult Index()
