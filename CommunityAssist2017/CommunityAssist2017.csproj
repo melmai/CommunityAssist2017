@@ -154,6 +154,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\NewDonationController.cs" />
+    <Compile Include="Controllers\NewGrantController.cs" />
     <Compile Include="Controllers\RegistrationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -203,6 +204,7 @@
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\NewDonation.cs" />
+    <Compile Include="Models\NewGrant.cs" />
     <Compile Include="Models\NewPerson.cs" />
     <Compile Include="Models\Person.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -281,6 +283,8 @@
     <Content Include="Views\Login\Result.cshtml" />
     <Content Include="Views\NewDonation\Index.cshtml" />
     <Content Include="Views\NewDonation\Result.cshtml" />
+    <Content Include="Views\NewGrant\Index.cshtml" />
+    <Content Include="Views\NewGrant\Result.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
